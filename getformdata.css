@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+}
+
+label {
+    display:grid;
+    margin-bottom: 10px; 
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+button:hover {
+    background-color:blueviolet;
+}

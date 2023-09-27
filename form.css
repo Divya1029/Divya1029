@@ -1,0 +1,47 @@
+body{
+    background-color: brown;
+    image-rendering:auto ;
+}
+img{
+    margin-left: 92%;
+}
+.container-full{
+    text-align: center;
+    margin-top: -8%;
+}
+h1{
+    color: aqua;
+}
+
+input[type=text]{
+    padding-left: 10px;
+    border-radius: 3px;
+    width: 500px;
+    height: 50px;
+    background-color:antiquewhite;
+}
+input[type=number]{
+    padding-left: 10px;
+    border-radius: 3px;
+    width: 500px;
+    height: 50px;
+}
+button{
+    height: 50px;
+    width: 100px;
+}
+button:hover{
+    background-color: aqua;
+}
+::placeholder {
+    color: blue;
+}
+#mobile_number::placeholder {
+    color:darkgreen
+}
+#age::placeholder {
+    color:darkgreen; 
+}
+#experience::placeholder {
+    color:darkgreen; 
+}

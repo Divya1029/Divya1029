@@ -1,0 +1,28 @@
+body{
+  background-color: aquamarine;
+}
+
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+/* Apply styles to the input and error message */
+input[type="email"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+  
+  /* Style the error message */
+input:invalid {
+    border-color: red;
+}
+  
+  /* Style the submit button */
+button {
+    color: #fff;
+    border:2px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // Function to perform form validation
+        function validateForm() {
+            // Get form elements by their IDs
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            // Regular expression to validate email format
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            // Check if the name is empty
+            if (name === "") {
+                alert("Name must not be empty");
+                return false; // Prevent form submission
+            }
+
+            // Check if the email is in a valid format
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address");
+                return false; // Prevent form submission
+            }
+
+            // If both name and email are valid, allow the form to submit
+            return true;
+        }
+
+        // Attach the form validation function to the form's submit event
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            if (!validateForm()) {
+                event.preventDefault(); // Prevent the form from submitting if validation fails
+            }
+        });
+    </script>
+</body>
+</html>
